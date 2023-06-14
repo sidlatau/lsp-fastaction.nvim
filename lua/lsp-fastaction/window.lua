@@ -238,7 +238,6 @@ function M.popup_window(contents, filetype, opts)
 		api.nvim_set_option_value("winhighlight", "Normal:" .. opts.window_hl, { win = content_win })
 	end
 	close_popup_window(content_win, {
-		"CursorMoved",
 		"BufHidden",
 		"InsertCharPre",
 		"WinLeave",
